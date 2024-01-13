@@ -52,16 +52,17 @@ const tailwind = plugin(function ({addUtilities, addComponents, e, prefix, confi
 
     const alignmentUtilities = {
         '.alignfull': {
-            margin: `${margin[8] || '0.5rem'} calc(50% - 50vw) !important`,
-            maxWidth: '100vw !important',
+            //margin: `${margin[8] || '0.5rem'} calc(50% - 50vw) !important`,
+            maxWidth: '100vw',
             "@apply w-screen": {}
         },
         '.alignwide': {
-            margin: `${margin[8] || '0.5rem'} 0`,
+            //margin: `${margin[8] || '0.5rem'} 0`,
             "@apply !max-w-wide": {}
         },
         '.alignnone': {
-            "@apply h-auto max-w-full mx-0": {}
+            //"@apply h-auto max-w-full mx-0": {}
+            "@apply h-auto max-w-full": {}
         },
         ".aligncenter": {
             margin: `${margin[2] || '0.5rem'} auto`,
@@ -99,7 +100,12 @@ const tailwind = plugin(function ({addUtilities, addComponents, e, prefix, confi
         },
     };
 
-    addUtilities([widthUtilities, maxWidthUtilities, alignmentUtilities , imageCaptions], {
+    addUtilities([
+        widthUtilities,
+        maxWidthUtilities,
+        alignmentUtilities,
+        imageCaptions
+    ], {
         respectPrefix: false,
         respectImportant: false,
     });
