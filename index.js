@@ -103,7 +103,6 @@ const tailwind = plugin(function ({addUtilities, addComponents, e, prefix, confi
     addUtilities([
         widthUtilities,
         maxWidthUtilities,
-        alignmentUtilities,
         imageCaptions
     ], {
         respectPrefix: false,
