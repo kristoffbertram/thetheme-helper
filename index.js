@@ -53,20 +53,20 @@ const tailwind = plugin(function ({addUtilities, addComponents, e, prefix, confi
     const alignmentUtilities = {
         '.alignfull': {
             //margin: `${margin[8] || '0.5rem'} calc(50% - 50vw) !important`,
-            maxWidth: '100vw',
-            "@apply w-screen": {}
+            //maxWidth: '100vw',
+            //"@apply w-screen": {}
         },
         '.alignwide': {
             //margin: `${margin[8] || '0.5rem'} 0`,
-            "@apply !max-w-wide": {}
+            //"@apply !max-w-wide": {}
         },
         '.alignnone': {
             //"@apply h-auto max-w-full mx-0": {}
-            "@apply h-auto max-w-full": {}
+            //"@apply h-auto max-w-full": {}
         },
         ".aligncenter": {
-            margin: `${margin[2] || '0.5rem'} auto`,
-            "@apply block": {}
+            //margin: `${margin[2] || '0.5rem'} auto`,
+            //"@apply block": {}
         },
         [`@media (min-width: ${screens.sm || '640px'})`]: {
             '.alignleft:not(.wp-block-button)': {
